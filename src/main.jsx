@@ -384,6 +384,7 @@ function App() {
 }
   else if (
     q.includes("chain reaction")||
+    q.includes("chain")||
     q.includes("श्रृंखला प्रतिक्रिया") ||
     q.includes("ਚੇਨ ਰੀਐਕਸ਼ਨ") ||
     q.includes("চেইন রিয়্যাকশন") ||
