@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
@@ -50,6 +50,17 @@ const answers = {
         "Common in nuclear reactions.",
         "Can be controlled or uncontrolled."
       ]
+    },
+    "AI": {
+      title: "Artificial Intelligence — Simple Explanation",
+      text:
+        "Artificial Intelligence (AI) is a technology that enables computers and machines to perform tasks that normally require human intelligence.",
+      bullets: [
+        "AI can learn from data.",
+        "AI can recognize patterns and make decisions.",
+        "AI is used in applications like voice assistants, recommendation systems, and image recognition.",
+        "AI can automate tasks and solve complex problems."
+      ]
     }
   },
 
@@ -97,6 +108,17 @@ const answers = {
         "प्रक्रिया बाहरी इनपुट के बिना जारी रहती है।",
         "आम तौर पर नाभिकीय प्रतिक्रियाओं में होती है।",
         "इसे नियंत्रित या असंयमित किया जा सकता है।"
+      ]
+    },
+    "AI": {
+      title: "कृत्रिम बुद्धिमत्ता — सरल व्याख्या",
+      text:
+        "कृत्रिम बुद्धिमत्ता (AI) एक ऐसी तकनीक है जो कंप्यूटर और मशीनों को ऐसे कार्य करने में सक्षम बनाती है जिनके लिए सामान्यतः मानव बुद्धिमत्ता की आवश्यकता होती है।",
+      bullets: [
+        "AI डेटा से सीख सकता है।",
+        "AI पैटर्न को पहचानकर निर्णय ले सकता है।",
+        "AI का उपयोग वॉयस असिस्टेंट, सुझाव प्रणाली और छवि पहचान जैसी तकनीकों में किया जाता है।",
+        "AI कार्यों को स्वचालित कर सकता है और जटिल समस्याओं को हल करने में मदद कर सकता है।"
       ]
     }
   },
@@ -146,6 +168,17 @@ const answers = {
         "ਆਮ ਤੌਰ 'ਤੇ ਨਿਊਕਲੀਅਰ ਰੀਐਕਸ਼ਨਾਂ ਵਿੱਚ ਹੁੰਦੀ ਹੈ।",
         "ਇਸ ਨੂੰ ਨਿਯੰਤਰਿਤ ਜਾਂ ਅਣਨਿਯੰਤਰਿਤ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
       ]
+    },
+    "AI": {
+      title: "ਕ੍ਰਿਤ੍ਰਿਮ ਬੁੱਧੀ — ਸਰਲ ਵਿਆਖਿਆ",
+      text:
+        "ਕ੍ਰਿਤ੍ਰਿਮ ਬੁੱਧੀ (AI) ਇੱਕ ਤਕਨਾਲੋਜੀ ਹੈ ਜੋ ਕੰਪਿਊਟਰਾਂ ਅਤੇ ਮਸ਼ੀਨਾਂ ਨੂੰ ਉਹ ਕੰਮ ਕਰਨ ਦੇ ਯੋਗ ਬਣਾਉਂਦੀ ਹੈ ਜਿਨ੍ਹਾਂ ਲਈ ਆਮ ਤੌਰ 'ਤੇ ਮਨੁੱਖੀ ਬੁੱਧੀ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।",
+      bullets: [
+        "AI ਡਾਟਾ ਤੋਂ ਸਿੱਖ ਸਕਦੀ ਹੈ।",
+        "AI ਪੈਟਰਨਾਂ ਨੂੰ ਪਛਾਣ ਕੇ ਫੈਸਲੇ ਲੈ ਸਕਦੀ ਹੈ।",
+        "AI ਦੀ ਵਰਤੋਂ ਵੌਇਸ ਅਸਿਸਟੈਂਟ, ਸਿਫਾਰਸ਼ ਪ੍ਰਣਾਲੀਆਂ ਅਤੇ ਤਸਵੀਰਾਂ ਦੀ ਪਛਾਣ ਵਰਗੀਆਂ ਤਕਨਾਲੋਜੀਆਂ ਵਿੱਚ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+        "AI ਕੰਮਾਂ ਨੂੰ ਸਵੈਚਾਲਿਤ ਕਰ ਸਕਦੀ ਹੈ ਅਤੇ ਗੁੰਝਲਦਾਰ ਸਮੱਸਿਆਵਾਂ ਨੂੰ ਹੱਲ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦੀ ਹੈ।"
+      ]
     }
   },
 
@@ -193,6 +226,17 @@ const answers = {
         "प्रक्रिया बाहरी इनपुट के बिना जारी रहती है।",
         "आम तौर पर नाभिकीय प्रतिक्रियाओं में होती है।",
         "इसे नियंत्रित या असंयमित किया जा सकता है।"
+      ]
+    },
+        "AI": {
+      title: "कृत्रिम बुद्धिमत्ता — सोपी व्याख्या",
+      text:
+        "कृत्रिम बुद्धिमत्ता (AI) हे एक तंत्रज्ञान आहे जे संगणक आणि मशीनना सामान्यतः मानवी बुद्धिमत्तेची आवश्यकता असलेली कामे करण्यास सक्षम बनवते.",
+      bullets: [
+        "AI डेटामधून शिकू शकते.",
+        "AI नमुने ओळखून निर्णय घेऊ शकते.",
+        "AI चा वापर व्हॉइस असिस्टंट, शिफारस प्रणाली आणि प्रतिमा ओळख यांसारख्या तंत्रज्ञानामध्ये केला जातो.",
+        "AI कामे स्वयंचलित करू शकते आणि गुंतागुंतीच्या समस्या सोडवण्यास मदत करू शकते."
       ]
     }
   },
@@ -242,6 +286,17 @@ const answers = {
         "সাধারণত পারমাণবিক প্রতিক্রিয়ায় ঘটে।",
         "এটি নিয়ন্ত্রিত বা অ-নিয়ন্ত্রিত হতে পারে।"
       ]
+    }, 
+    "AI": {
+      title: "কৃত্রিম বুদ্ধিমত্তা — সহজ ব্যাখ্যা",
+      text:
+        "কৃত্রিম বুদ্ধিমত্তা (AI) হলো এমন একটি প্রযুক্তি যা কম্পিউটার ও মেশিনকে এমন কাজ করতে সক্ষম করে, যেগুলোর জন্য সাধারণত মানুষের বুদ্ধিমত্তার প্রয়োজন হয়।",
+      bullets: [
+        "AI ডেটা থেকে শিখতে পারে।",
+        "AI বিভিন্ন ধরণ বা প্যাটার্ন শনাক্ত করে সিদ্ধান্ত নিতে পারে।",
+        "AI ভয়েস অ্যাসিস্ট্যান্ট, সুপারিশ ব্যবস্থা এবং ছবি শনাক্তকরণের মতো প্রযুক্তিতে ব্যবহৃত হয়।",
+        "AI কাজ স্বয়ংক্রিয় করতে পারে এবং জটিল সমস্যা সমাধানে সাহায্য করতে পারে।"
+      ]
     }
   },
 
@@ -290,7 +345,18 @@ const answers = {
         "सामान्यतः परमाण्विक प्रतिक्रिया में होती है।",
         "यह नियंत्रित या अनियंत्रित हो सकता है।"
       ]
-    }
+    },
+    "AI": {
+      title: "செயற்கை நுண்ணறிவு — எளிய விளக்கம்",
+      text:
+        "செயற்கை நுண்ணறிவு (AI) என்பது பொதுவாக மனித நுண்ணறிவு தேவைப்படும் பணிகளை கணினிகளும் இயந்திரங்களும் செய்ய உதவும் ஒரு தொழில்நுட்பமாகும்.",
+      bullets: [
+        "AI தரவிலிருந்து கற்றுக்கொள்ள முடியும்.",
+        "AI வடிவங்களை அடையாளம் கண்டு முடிவுகளை எடுக்க முடியும்.",
+        "குரல் உதவியாளர்கள், பரிந்துரை அமைப்புகள் மற்றும் பட அங்கீகாரம் போன்ற தொழில்நுட்பங்களில் AI பயன்படுத்தப்படுகிறது.",
+        "AI பணிகளை தானியக்கமாக்கி சிக்கலான பிரச்சினைகளைத் தீர்க்க உதவுகிறது."
+      ]
+    } 
   },
 
   "తెలుగు": {
@@ -338,6 +404,17 @@ const answers = {
         "సాధారణంగా అణు రియాక్షన్లలో జరుగుతుంది.",
         "దాన్ని నియంత్రించవచ్చు లేదా నియంత్రించలేము."
       ]
+    },
+    "AI": {
+      title: "కృత్రిమ మేధస్సు — సులభమైన వివరణ",
+      text:
+        "కృత్రిమ మేధస్సు (AI) అనేది కంప్యూటర్లు మరియు యంత్రాలు సాధారణంగా మానవ మేధస్సు అవసరమయ్యే పనులను చేయగలిగే సాంకేతికత.",
+      bullets: [
+        "AI డేటా నుండి నేర్చుకోవచ్చు.",
+        "AI నమూనాలను గుర్తించి నిర్ణయాలు తీసుకోవచ్చు.",
+        "AI వాయిస్ అసిస్టెంట్లు, సిఫార్సు వ్యవస్థలు మరియు చిత్రం గుర్తింపు వంటి అనువర్తనాలలో ఉపయోగించబడుతుంది.",
+        "AI పనులను ఆటోమేటిక్ చేయగలదు మరియు సంక్లిష్ట సమస్యలను పరిష్కరించడంలో సహాయపడుతుంది."
+      ]
     }
   }
 };
@@ -346,6 +423,7 @@ function App() {
   const [language, setLanguage] = useState("English");
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState(null);
+  const [currentTopic, setCurrentTopic] = useState(null);
   const [tab, setTab] = useState("Tutor");
   const [uploadedFile, setUploadedFile] = useState(null);
   const [targetLanguage, setTargetLanguage] = useState("हिन्दी");
@@ -392,9 +470,24 @@ function App() {
   ) {
   topic = "chain reaction";
 }
+  // else if (
+  //   q.includes("artificial intelligence") ||
+  //   q.includes("AI") ||
+  //   q.includes("ai") ||
+  //   q.includes("कृत्रिम बुद्धिमत्ता") ||
+  //   q.includes("க௃த்திம விருப்பம்") ||
+  //   q.includes("కృత్రిమ మేధస్సు")
+
+  // ) {
+  //   topic = "AI";
+  // }
+  else if (/\bai\b/i.test(q)) {
+  topic = "AI";
+}
   
 
   if (topic && answers[language]?.[topic]) {
+    setCurrentTopic(topic);
     setAnswer(answers[language][topic]);
   } else {
     setAnswer({
@@ -402,11 +495,19 @@ function App() {
       text: "I don't have an explanation for this topic yet.",
       bullets: [
         "Try asking about Binary Search.",
-        "Try asking about Photosynthesis."
-      ]
+        "Try asking about Photosynthesis.",
+        "Try asking about AI.",
+        "Try asking about Newton's First Law.",
+        "Try asking about Chain Reaction."
+]
     });
   }
 }
+useEffect(() => {
+  if (currentTopic && answers[language]?.[currentTopic]) {
+    setAnswer(answers[language][currentTopic]);
+  }
+}, [language, currentTopic]);
 
   function speak(text) {
   alert("Voice feature will be connected to AI voice service in next stage of development.");
