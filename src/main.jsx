@@ -6,75 +6,186 @@ const languages = ["English", "हिन्दी", "ਪੰਜਾਬੀ" , "म�
 
 const answers = {
   English: {
-    title: "Binary Search — Simple Explanation",
-    text:
-      "Binary search finds an item in a sorted list by repeatedly checking the middle element and removing half of the remaining search space.",
-    bullets: [
-      "The array must be sorted.",
-      "Check the middle element.",
-      "Discard the half that cannot contain the answer.",
-      "Repeat until the item is found."
-    ]
+    "Binary Search": {
+      title: "Binary Search — Simple Explanation",
+      text:
+        "Binary search finds an item in a sorted list by repeatedly checking the middle element and removing half of the remaining search space.",
+      bullets: [
+        "The array must be sorted.",
+        "Check the middle element.",
+        "Discard the half that cannot contain the answer.",
+        "Repeat until the item is found."
+      ]
+    },
+
+    "Photosynthesis": {
+      title: "Photosynthesis — Simple Explanation",
+      text:
+        "Photosynthesis is the process by which green plants make their food using sunlight, water and carbon dioxide.",
+      bullets: [
+        "Plants use sunlight as energy.",
+        "Plants take carbon dioxide from the air.",
+        "Plants absorb water through their roots.",
+        "Plants produce food and release oxygen."
+      ]
+    }
   },
 
   "हिन्दी": {
-    title: "बाइनरी सर्च — आसान भाषा में",
-    text:
-      "बाइनरी सर्च sorted list में किसी item को खोजने का तरीका है। हर बार बीच वाले element को देखकर search area का आधा हिस्सा हटा दिया जाता है।",
-    bullets: [
-      "Array का sorted होना जरूरी है।",
-      "बीच वाला element देखें।",
-      "जिस आधे हिस्से में answer नहीं हो सकता उसे हटा दें।",
-      "Item मिलने तक दोहराएँ।"
-    ]
+    "Binary Search": {
+      title: "बाइनरी सर्च — आसान भाषा में",
+      text:
+        "बाइनरी सर्च sorted list में किसी item को खोजने का तरीका है। हर बार बीच वाले element को देखकर search area का आधा हिस्सा हटा दिया जाता है।",
+      bullets: [
+        "Array का sorted होना जरूरी है।",
+        "बीच वाला element देखें।",
+        "जिस आधे हिस्से में answer नहीं हो सकता उसे हटा दें।",
+        "Item मिलने तक दोहराएँ।"
+      ]
+    },
+
+    "Photosynthesis": {
+      title: "प्रकाश संश्लेषण — आसान भाषा में",
+      text:
+        "प्रकाश संश्लेषण वह प्रक्रिया है जिसमें हरे पौधे सूर्य के प्रकाश की मदद से अपना भोजन बनाते हैं।",
+      bullets: [
+        "पौधे सूर्य के प्रकाश का उपयोग करते हैं।",
+        "पौधे हवा से carbon dioxide लेते हैं।",
+        "पौधे जड़ों से पानी लेते हैं।",
+        "पौधे भोजन बनाते हैं और oxygen छोड़ते हैं।"
+      ]
+    }
   },
 
   "ਪੰਜਾਬੀ": {
-    title: "ਬਾਈਨਰੀ ਸਰਚ — ਸੌਖੀ ਭਾਸ਼ਾ ਵਿੱਚ",
-    text:
-      "Binary Search sorted list ਵਿੱਚ ਕਿਸੇ item ਨੂੰ ਲੱਭਣ ਦਾ ਤਰੀਕਾ ਹੈ। ਹਰ ਵਾਰ ਵਿਚਕਾਰਲੇ element ਨੂੰ check ਕਰਕੇ search area ਦਾ ਅੱਧਾ ਹਿੱਸਾ ਹਟਾਇਆ ਜਾਂਦਾ ਹੈ।",
-    bullets: [
-      "Array sorted ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।",
-      "ਵਿਚਕਾਰਲਾ element check ਕਰੋ।",
-      "ਗਲਤ half ਨੂੰ ਹਟਾਓ।",
-      "Item ਮਿਲਣ ਤੱਕ repeat ਕਰੋ।"
-    ]
+    "Binary Search": {
+      title: "ਬਾਈਨਰੀ ਸਰਚ — ਸੌਖੀ ਭਾਸ਼ਾ ਵਿੱਚ",
+      text:
+        "Binary Search sorted list ਵਿੱਚ ਕਿਸੇ item ਨੂੰ ਲੱਭਣ ਦਾ ਤਰੀਕਾ ਹੈ।",
+      bullets: [
+        "Array sorted ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।",
+        "ਵਿਚਕਾਰਲਾ element check ਕਰੋ।",
+        "ਗਲਤ half ਨੂੰ ਹਟਾਓ।",
+        "Item ਮਿਲਣ ਤੱਕ repeat ਕਰੋ।"
+      ]
+    },
+
+    "Photosynthesis": {
+      title: "ਪ੍ਰਕਾਸ਼ ਸੰਸ਼ਲੇਸ਼ਣ — ਸੌਖੀ ਭਾਸ਼ਾ ਵਿੱਚ",
+      text:
+        "ਪ੍ਰਕਾਸ਼ ਸੰਸ਼ਲੇਸ਼ਣ ਉਹ ਪ੍ਰਕਿਰਿਆ ਹੈ ਜਿਸ ਵਿੱਚ ਹਰੇ ਪੌਦੇ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਦੀ ਮਦਦ ਨਾਲ ਆਪਣਾ ਭੋਜਨ ਬਣਾਉਂਦੇ ਹਨ।",
+      bullets: [
+        "ਪੌਦੇ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਵਰਤਦੇ ਹਨ।",
+        "ਪੌਦੇ ਹਵਾ ਵਿੱਚੋਂ carbon dioxide ਲੈਂਦੇ ਹਨ।",
+        "ਪੌਦੇ ਜੜ੍ਹਾਂ ਰਾਹੀਂ ਪਾਣੀ ਲੈਂਦੇ ਹਨ।",
+        "ਪੌਦੇ oxygen ਛੱਡਦੇ ਹਨ।"
+      ]
+    }
   },
 
   "मराठी": {
-    title: "बाइनरी सर्च — सोप्पा भाषेत",
-    text:
-      "बाइनरी सर्च वापरून एका क्रमवंत सूचीमध्ये एका घटकाची शोध घेतो. प्रत्येकवेळी मध्यवर्ती घटकावर तपासणी करून शोधण्याचे क्षेत्राचा अर्धा हिस्सा काढून टाकतो.",
-    bullets: [
-      "सूची क्रमवंत असली पाहिजे.",
-      "मध्यवर्ती घटकावर तपासा.",
-      "उत्तर समजून नसलेला अर्धा हिस्सा काढून टाका.",
-      "घटक मिळविणे पर्यंत पुनः प्रयत्न करा."
-    ]
-  },
-  "বাংলা": {
-    title: "বাইনারি সার্চ — সহজ ভাষায়",
-    text:
-      "বাইনারি সার্চ একটি sorted list-এ একটি item খুঁজে বের করার পদ্ধতি। প্রতিবার মধ্যবর্তী element পরীক্ষা করে search area-এর অর্ধেক অংশ বাদ দেওয়া হয়।",
-    bullets: [
-      "Array-টি sorted হতে হবে।",
-      "মধ্যবর্তী element পরীক্ষা করুন।",
-      "যে অর্ধেক অংশে উত্তর থাকতে পারে না তা বাদ দিন।",
-      "Item পাওয়া না পর্যন্ত পুনরাবৃত্তি করুন।"
-    ]
-  },
-  "தமிழ்": {
-    title: "பைனரி தேடல் — எளிய விளக்கம்",
-    text:
-      "பைனரி தேடல் என்பது ஒரு வரிசைப்படுத்தப்பட்ட பட்டியலில் ஒரு உருப்படியை கண்டுபிடிக்கும் முறை. ஒவ்வொரு முறையும் நடுவில் உள்ள உருப்படியை சரிபார்த்து மீதமுள்ள தேடல் பகுதியின் பாதியை நீக்குகிறது.",
-    bullets: [
-      "அணியியல் வரிசைப்படுத்தப்பட்டிருக்க வேண்டும்.",
-      "நடுவில் உள்ள உருப்படியை சரிபார்க்கவும்.",
-      "பதில் இருக்க முடியாத பாதியை நீக்கவும்.",
-      "உருப்படி கிடைக்கும் வரை மீண்டும் முயற்சிக்கவும்."]
+    "Binary Search": {
+      title: "बायनरी सर्च — सोप्या भाषेत",
+      text:
+        "बायनरी सर्च ही क्रमवारी लावलेल्या यादीमध्ये एखादा घटक शोधण्याची पद्धत आहे.",
+      bullets: [
+        "यादी क्रमवारीत असली पाहिजे.",
+        "मधला घटक तपासा.",
+        "चुकीचा अर्धा भाग काढून टाका.",
+        "घटक सापडेपर्यंत पुन्हा करा."
+      ]
     },
 
+    "Photosynthesis": {
+      title: "प्रकाश संश्लेषण — सोप्या भाषेत",
+      text:
+        "प्रकाश संश्लेषण ही प्रक्रिया आहे ज्यामध्ये हिरवी झाडे सूर्यप्रकाशाच्या मदतीने अन्न तयार करतात.",
+      bullets: [
+        "झाडे सूर्यप्रकाशाचा वापर करतात.",
+        "झाडे कार्बन डायऑक्साइड घेतात.",
+        "झाडे मुळांद्वारे पाणी घेतात.",
+        "झाडे ऑक्सिजन सोडतात."
+      ]
+    }
+  },
 
+  "বাংলা": {
+    "Binary Search": {
+      title: "বাইনারি সার্চ — সহজ ভাষায়",
+      text:
+        "বাইনারি সার্চ একটি sorted list-এ একটি item খুঁজে বের করার পদ্ধতি।",
+      bullets: [
+        "Array-টি sorted হতে হবে।",
+        "মধ্যবর্তী element পরীক্ষা করুন।",
+        "যে অর্ধেক অংশে উত্তর থাকতে পারে না তা বাদ দিন।",
+        "Item পাওয়া না পর্যন্ত পুনরাবৃত্তি করুন।"
+      ]
+    },
+
+    "Photosynthesis": {
+      title: "সালোকসংশ্লেষণ — সহজ ভাষায়",
+      text:
+        "সালোকসংশ্লেষণ হলো সেই প্রক্রিয়া যার মাধ্যমে সবুজ উদ্ভিদ সূর্যের আলো ব্যবহার করে খাদ্য তৈরি করে।",
+      bullets: [
+        "উদ্ভিদ সূর্যের আলো ব্যবহার করে।",
+        "বাতাস থেকে কার্বন ডাইঅক্সাইড নেয়।",
+        "শিকড়ের মাধ্যমে পানি গ্রহণ করে।",
+        "খাদ্য তৈরি করে এবং অক্সিজেন ছাড়ে।"
+      ]
+    }
+  },
+
+  "தமிழ்": {
+    "Binary Search": {
+      title: "பைனரி தேடல் — எளிய விளக்கம்",
+      text:
+        "பைனரி தேடல் என்பது வரிசைப்படுத்தப்பட்ட பட்டியலில் ஒரு உருப்படியை கண்டுபிடிக்கும் முறையாகும்.",
+      bullets: [
+        "பட்டியல் வரிசைப்படுத்தப்பட்டிருக்க வேண்டும்.",
+        "நடுவில் உள்ள உருப்படியை சரிபார்க்கவும்.",
+        "தேவையில்லாத பாதியை நீக்கவும்.",
+        "உருப்படி கிடைக்கும் வரை தொடரவும்."
+      ]
+    },
+
+    "Photosynthesis": {
+      title: "ஒளிச்சேர்க்கை — எளிய விளக்கம்",
+      text:
+        "ஒளிச்சேர்க்கை என்பது பச்சை தாவரங்கள் சூரிய ஒளியின் உதவியுடன் உணவை உருவாக்கும் செயல்முறையாகும்.",
+      bullets: [
+        "தாவரங்கள் சூரிய ஒளியை பயன்படுத்துகின்றன.",
+        "காற்றிலிருந்து கார்பன் டை ஆக்சைடை எடுத்துக்கொள்கின்றன.",
+        "வேர்கள் மூலம் தண்ணீரை எடுத்துக்கொள்கின்றன.",
+        "உணவை உருவாக்கி ஆக்சிஜனை வெளியிடுகின்றன."
+      ]
+    }
+  },
+
+  "తెలుగు": {
+    "Binary Search": {
+      title: "బైనరీ సెర్చ్ — సులభమైన వివరణ",
+      text:
+        "బైనరీ సెర్చ్ అనేది sorted list లో ఒక అంశాన్ని కనుగొనే వేగవంతమైన పద్ధతి.",
+      bullets: [
+        "Array sorted గా ఉండాలి.",
+        "మధ్యలో ఉన్న element ను చూడాలి.",
+        "సరైన భాగాన్ని మాత్రమే కొనసాగించాలి.",
+        "Item దొరికే వరకు పునరావృతం చేయాలి."
+      ]
+    },
+
+    "Photosynthesis": {
+      title: "కిరణజన్య సంయోగక్రియ — సులభమైన వివరణ",
+      text:
+        "కిరణజన్య సంయోగక్రియ అనేది మొక్కలు సూర్యకాంతి సహాయంతో తమ ఆహారాన్ని తయారు చేసుకునే ప్రక్రియ.",
+      bullets: [
+        "మొక్కలు సూర్యకాంతిని ఉపయోగిస్తాయి.",
+        "గాలి నుండి కార్బన్ డయాక్సైడ్ తీసుకుంటాయి.",
+        "వేర్ల ద్వారా నీటిని తీసుకుంటాయి.",
+        "ఆహారాన్ని తయారు చేసి ఆక్సిజన్ విడుదల చేస్తాయి."
+      ]
+    }
+  }
 };
 
 function App() {
@@ -87,12 +198,40 @@ function App() {
   const [uploadMessage, setUploadMessage] = useState("");
 
   function askTutor(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!question.trim()) return;
+  if (!question.trim()) return;
 
-    setAnswer(answers[language]);
+  const q = question.toLowerCase();
+
+  let topic = null;
+
+  if (q.includes("binary search") || q.includes("binary")) {
+    topic = "Binary Search";
+  } 
+  else if (
+    q.includes("photosynthesis") ||
+    q.includes("प्रकाश संश्लेषण") ||
+    q.includes("सालोकसংশ्लेषण") ||
+    q.includes("ஒளிச்சேர்க்கை") ||
+    q.includes("కిరణజన్య")
+  ) {
+    topic = "Photosynthesis";
   }
+
+  if (topic && answers[language]?.[topic]) {
+    setAnswer(answers[language][topic]);
+  } else {
+    setAnswer({
+      title: "Topic not found",
+      text: "I don't have an explanation for this topic yet.",
+      bullets: [
+        "Try asking about Binary Search.",
+        "Try asking about Photosynthesis."
+      ]
+    });
+  }
+}
 
   function speak(text) {
   alert("Voice feature will be connected to AI voice service in next stage of development.");
