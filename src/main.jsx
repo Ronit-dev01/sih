@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
-const languages = ["English", "हिन्दी", "ਪੰਜਾਬੀ" , "मराठी" , "বাংলা", "தமிழ்", "తెలుగు"];
+const languages = ["English", "हिन्दी", "ਪੰਜਾਬੀ" , "मराठी" , "বাংলা", "தமிழ்", "తెలుగు"]; // Add more languages as needed 
 
-const answers = {
+const answers = { // Add more topics and languages as needed
   English: {
     "Binary Search": {
       title: "Binary Search — Simple Explanation",
@@ -419,7 +419,7 @@ const answers = {
   }
 };
 
-function App() {
+function App() { // Main App component 
   const [language, setLanguage] = useState("English");
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState(null);
@@ -429,7 +429,7 @@ function App() {
   const [targetLanguage, setTargetLanguage] = useState("हिन्दी");
   const [uploadMessage, setUploadMessage] = useState("");
 
-  function askTutor(e) {
+  function askTutor(e) { // Function to handle question submission
   e.preventDefault();
 
   if (!question.trim()) return;
@@ -470,17 +470,6 @@ function App() {
   ) {
   topic = "chain reaction";
 }
-  // else if (
-  //   q.includes("artificial intelligence") ||
-  //   q.includes("AI") ||
-  //   q.includes("ai") ||
-  //   q.includes("कृत्रिम बुद्धिमत्ता") ||
-  //   q.includes("க௃த்திம விருப்பம்") ||
-  //   q.includes("కృత్రిమ మేధస్సు")
-
-  // ) {
-  //   topic = "AI";
-  // }
   else if (/\bai\b/i.test(q)) {
   topic = "AI";
 }
@@ -489,7 +478,7 @@ function App() {
   if (topic && answers[language]?.[topic]) {
     setCurrentTopic(topic);
     setAnswer(answers[language][topic]);
-  } else {
+  } else { // If topic not found, set a default answer
     setAnswer({
       title: "Topic not found",
       text: "I don't have an explanation for this topic yet.",
@@ -503,13 +492,13 @@ function App() {
     });
   }
 }
-useEffect(() => {
+useEffect(() => { // Update answer when language or topic changes
   if (currentTopic && answers[language]?.[currentTopic]) {
     setAnswer(answers[language][currentTopic]);
   }
 }, [language, currentTopic]);
 
-  function speak(text) {
+  function speak(text) { // Function to handle text-to-speech
   alert("Voice feature will be connected to AI voice service in next stage of development.");
 }
 
@@ -626,7 +615,7 @@ useEffect(() => {
       <label className="upload-area">
 
         <input
-          type="file"
+          type="file" 
           accept=".pdf,.doc,.docx,.txt,.mp4,.mov,.webm"
           onChange={(e) => {
             const file = e.target.files[0];

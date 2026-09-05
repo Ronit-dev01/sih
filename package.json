@@ -1,6 +1,6 @@
 {
-  "name": "ps42-vernacai",
-  "version": "1.0.0",
+  "name": "ps42-vernacai", 
+  "version": "1.0.0",   
   "private": true,
   "type": "module",
 
