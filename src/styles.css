@@ -228,10 +228,10 @@ select {
 }
 
 .pill {
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 1.4px;
   font-weight: bold;
-  color : white;
+  color : rgb(15, 11, 11);
 }
 
 .orb {
@@ -294,7 +294,7 @@ textarea {
 
   resize: vertical;
 
-  border: 1px solid #dce2ea;
+  border: 1px solid #d5dae0;
 
   border-radius: 11px;
 
@@ -304,7 +304,7 @@ textarea {
 }
 
 textarea:focus {
-  border-color: #8d9bad;
+  border-color: #e4e6ea;
 }
 
 
@@ -574,7 +574,9 @@ textarea:focus {
 
 .upload-area:hover {
   border-color: #000102;
-  background: #b3bdbb;
+  background: #ffffff;
+  transition: 0.2s;
+  transform: scale(1.02);
 }
 
 .upload-area input {
