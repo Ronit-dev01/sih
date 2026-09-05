@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import Workflow from "./Workflow.jsx";
 
 const languages = ["English", "हिन्दी", "ਪੰਜਾਬੀ" , "मराठी" , "বাংলা", "தமிழ்", "తెలుగు"]; // Add more languages as needed 
 
@@ -518,7 +519,7 @@ useEffect(() => { // Update answer when language or topic changes
         </div>
 
         <nav>
-          {["Tutor", "Translate", "Quiz", "Progress", "Upload"].map((item) => (
+          {["Tutor", "Translate", "Quiz", "Progress", "Upload" , "Workflow"].map((item) => (
             <button
               key={item}
               className={
@@ -533,6 +534,7 @@ useEffect(() => { // Update answer when language or topic changes
               {item === "Quiz" && "✅"}
               {item === "Progress" && "📈"}
               {item === "Upload" && "📄"}
+              {item === "Workflow" && "🛠️"}
               <span>{item}</span>
             </button>
           ))}
@@ -912,32 +914,27 @@ useEffect(() => { // Update answer when language or topic changes
 
 
         {/* OTHER PAGES */}
-        {tab !== "Tutor" && (
+        {tab === "Workflow" && <Workflow />}
+        {tab !== "tutor" && tab !== "upload" && tab !== "workflow" && (
+          <section className="placeholder">
 
-          <section className="coming">
+            <div className="empty">
 
-            <div className="empty-icon">
-              ✦
+              <div className="empty-icon">
+                ✦
+              </div>
+
+              <h3>
+                {tab} page is under development
+              </h3>
+
+              <p>
+                This feature will be available in the next stage of development.
+              </p>
+
             </div>
 
-            <h2>
-              {tab}
-            </h2>
-
-            <p>
-              This module will be added in the next
-              development stage.
-            </p>
-
-            <button
-              className="primary"
-              onClick={() => setTab("Tutor")}
-            >
-              Back to AI Tutor
-            </button>
-
           </section>
-
         )}
 
       </main>

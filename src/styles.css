@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f7fb;
+  background: #000000;
   color: #18212f;
 }
 
@@ -155,11 +155,13 @@ nav {
   gap: 30px;
 }
 
+
 .eyebrow {
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 1.7px;
   font-weight: bold;
-  color: #748096;
+  font-family: "trebuchet ms", sans-serif;
+  color: #7f8b98;
 }
 
 h1 {
@@ -172,10 +174,12 @@ h1 {
   letter-spacing: -1.8px;
 
   margin: 10px 0;
+
+  color: white;
 }
 
 .subtitle {
-  color: #758096;
+  color: #c7ccd4;
   line-height: 1.6;
 }
 
@@ -227,6 +231,7 @@ select {
   font-size: 9px;
   letter-spacing: 1.4px;
   font-weight: bold;
+  color : white;
 }
 
 .orb {
@@ -389,7 +394,7 @@ textarea:focus {
 
   text-align: center;
 
-  color: #7c8799;
+  color: #f4f5f7;
 }
 
 .empty-icon {
@@ -408,6 +413,7 @@ textarea:focus {
 
   color: #28374b;
 }
+
 
 
 /* FEATURES */
@@ -487,26 +493,48 @@ textarea:focus {
 
   .main {
     padding: 25px 16px;
-  }
+  } 
+}
   /* =========================
+   UPLOAD & TRANSLATE
+========================= */
+/* =========================
    UPLOAD & TRANSLATE
 ========================= */
 
 .upload-page {
   margin-top: 30px;
+  color: #eaedf1;
 }
 
 .upload-header {
   margin-bottom: 25px;
+  color: #f7f7f8;
 }
 
 .upload-header h2 {
   font-size: 32px;
   margin: 10px 0;
+  color: #ffffff;
+}
+.upload-page {
+  margin-top: 30px;
+  color: #eaedf1;
+}
+
+.upload-header {
+  margin-bottom: 25px;
+  color: #f7f7f8;
+}
+
+.upload-header h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #ffffff;
 }
 
 .upload-header p {
-  color: #748096;
+  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -519,14 +547,14 @@ textarea:focus {
   border-radius: 18px;
   padding: 25px;
 
-  box-shadow: 0 7px 25px rgba(21, 35, 61, 0.04);
+  box-shadow: 0 7px 25px rgba(241, 241, 243, 0.04);
 }
 
 
 /* DROP AREA */
 
 .upload-area {
-  min-height: 260px;
+  min-height: 2px;
 
   border: 2px dashed #cbd3df;
 
@@ -545,8 +573,8 @@ textarea:focus {
 }
 
 .upload-area:hover {
-  border-color: #182638;
-  background: #fafbfc;
+  border-color: #000102;
+  background: #b3bdbb;
 }
 
 .upload-area input {
@@ -559,7 +587,7 @@ textarea:focus {
 
   border-radius: 16px;
 
-  background: #eef2f6;
+  background: #000000;
 
   display: grid;
   place-items: center;
@@ -571,10 +599,11 @@ textarea:focus {
 
 .upload-area h3 {
   margin: 5px 0;
+  color: #3f3434;
 }
 
 .upload-area p {
-  color: #7b8799;
+  color: #20252e;
 
   font-size: 13px;
 }
@@ -642,7 +671,7 @@ textarea:focus {
 
   margin-top: 4px;
 
-  color: #7c8798;
+  color: #f4f5f7;
 
   font-size: 11px;
 }
@@ -656,7 +685,7 @@ textarea:focus {
 
   font-size: 17px;
 
-  color: #7c8798;
+  color: #f4f5f7;
 }
 
 
@@ -682,6 +711,7 @@ textarea:focus {
   font-weight: bold;
 
   margin-bottom: 8px;
+  color: #000000;
 }
 
 .translation-options select {
@@ -984,4 +1014,6 @@ textarea:focus {
     font-size: 9px;
   }
 }
+.upload-page .upload-header h2 {
+  color: white !important;
 }
