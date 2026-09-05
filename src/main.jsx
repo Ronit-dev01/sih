@@ -915,7 +915,7 @@ useEffect(() => { // Update answer when language or topic changes
 
         {/* OTHER PAGES */}
         {tab === "Workflow" && <Workflow />}
-        {tab !== "tutor" && tab !== "upload" && tab !== "workflow" && (
+        {tab !== "Tutor" && tab !== "Upload" && tab !== "Workflow" && (
           <section className="placeholder">
 
             <div className="empty">
